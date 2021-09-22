@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import SimpleKeyboard from "./SimpleKeyboard";
+import SimpleKeyboard from "./SimpleKeyboard.vue";
 import "./App.css";
 
 export default {
@@ -43,6 +43,7 @@ export default {
             this.$refs.childComponent.setValue(this.leaveType)
         },
     onKeyPress(button) {
+      
       // console.log("button", button);
     },
     onInputChange(input) {

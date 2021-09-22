@@ -27,6 +27,12 @@ export default {
   data: () => ({
     keyboard: null,
     layout: english,
+    buttonTheme: [
+    {
+      class: "hg-red",
+      buttons: "gmail.com"
+    }
+  ]
   }),
   mounted() {
     this.createKeyboard();
@@ -121,6 +127,9 @@ background: #642d82;
 }
 .hg-button span{
   color: #fff;
+}
+.hg-red{
+  background: #ff0000;
 }
 
 </style>
